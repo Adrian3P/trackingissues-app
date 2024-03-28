@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## This project is a playground for making and testing features while focusing on client and server components, routing, building APIs, DB integration with Prisma, authentification with NextAuth.js, etc.
+
 ## Getting Started
 
 First, run the development server:
