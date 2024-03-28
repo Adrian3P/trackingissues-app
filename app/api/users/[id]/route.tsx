@@ -8,7 +8,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   const user = await prisma.user.findUnique({
-    where: { id: parseInt(params.id) },
+    where: { id: params.id },
   });
   //in a real app we fetch data from a db
   //if not found, return error 404, otherwise return data
@@ -30,7 +30,7 @@ export async function PUT(
   //If invalid, return 400 error, otherwise fetch the user with the given id.
 
   const user = await prisma.user.findUnique({
-    where: { id: parseInt(params.id) },
+    where: { id: params.id },
   });
 
   if (!user)
@@ -52,7 +52,7 @@ export async function DELETE(
   { params }: { params: { id: string } }
 ) {
   const user = await prisma.user.findUnique({
-    where: { id: parseInt(params.id) },
+    where: { id: params.id },
   });
   //Fetch the user from db
   //If not found, return 404
